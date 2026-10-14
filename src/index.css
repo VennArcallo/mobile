@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/*
+ * Theme tokens. Each --color-* token becomes utilities: --color-primary gives
+ * bg-primary, text-primary, border-primary, outline-primary, and so on.
+ * Placeholder colors until the team picks a palette.
+ */
+@theme {
+  --color-primary: #FFD400;
+  --color-primary-hover: #E6BF00;
+  --color-primary-soft: #FFEE99;
+  --color-surface: #FFF8DC;
+  --font-sans: "Nunito", sans-serif;
+  --font-display: "Bricolage Grotesque", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+}
